@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="user-menu">
+            <div id="user-options" class="hidden">
+                <button id="themeToggle" title="Toggle Theme">🌞</button>
+                <button id="logoutButton" title="Logout">👋</button>
+            </div>
+            <div id="user-message" class="hidden">
+                Hello {{ username }}!<br>
+            </div>
+        </div>
+        <div class="card">
+            <div class="header">
+                <h1>Task Manager</h1>
+            </div>
+            <div class="flash-container">
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        {% for category, message in messages %}
+                            <div class="flash-message {{ category }}">{{ message }}</div>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+            </div>
+            <form class="add-task-form" id="taskForm">
+                <input type="text" id="taskInput" placeholder="Enter a new task" required>
+                <button type="submit" id="addTaskButton">+</button>
+            </form>
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
