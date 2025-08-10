@@ -1,10 +1,8 @@
 # Task Manager
 
-![Version](https://img.shields.io/badge/version-1.1.0-blue)   ![License: MIT](https://img.shields.io/github/license/samueldata/task-manager)   ![Python Version](https://img.shields.io/badge/python-3.9.7-blue)   ![Last Commit](https://img.shields.io/github/last-commit/samueldata/task-manager)   ![GitHub issues](https://img.shields.io/github/issues/samueldata/task-manager)   ![Repo Size](https://img.shields.io/github/repo-size/samueldata/task-manager)   ![GitHub forks](https://img.shields.io/github/forks/samueldata/task-manager?style=social)   ![GitHub stars](https://img.shields.io/github/stars/samueldata/task-manager?style=social)
-
-![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen)
-
-A fully functional task manager application built with Flask. This project includes user authentication, task management, and a responsive UI. It is a great starting point for anyone looking to create a task management system and is open to contributions and improvements.
+A fully functional task manager application built with **Flask**.  
+This project includes user authentication, task management, and a responsive UI.  
+I built and configured this as part of my portfolio to demonstrate my backend and frontend development skills.
 
 ---
 
@@ -23,23 +21,11 @@ A fully functional task manager application built with Flask. This project inclu
 
 ## Features
 
-- **User Authentication**:
-  - Login and logout functionality.
-  - Tasks are user-specific and private.
-- **Task Management**:
-  - Add new tasks.
-  - View all tasks.
-  - Delete tasks.
-- **Persistent Data**:
-  - Tasks are stored in a SQLite database and persist across sessions.
-- **Responsive UI**:
-  - Simple and intuitive design.
-  - Toggle between light and dark themes.
-- **Secure Passwords**:
-  - Passwords are hashed using `pbkdf2:sha256` for security.
-- **Flash Messages**:
-  - User-friendly flash messages for feedback (e.g., login errors, registration success).
-
+- User Authentication: Login/Logout, user-specific tasks
+- Task Management: Add, delete, mark complete
+- Responsive UI with light/dark theme
+- SQLite database for persistent data
+- Secure password hashing
 ---
 
 ## Installation
@@ -48,7 +34,7 @@ Follow these steps to set up the project locally:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/samueldata/task-manager.git
+    git clone https://github.com/srujan096/Fask-task-manager.git
     cd task-manager
     ```
 
@@ -136,20 +122,13 @@ Contributions are welcome! Here's how you can help:
 
 Please make sure your code follows the project's coding standards and includes tests if applicable.
 
----
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
 ## Contact
-
-If you have any questions or suggestions, feel free to reach out:
-
-- **Email**: datasamuel@outlook.com
-- **GitHub**: [samueldata](https://github.com/samueldata)
+- **Name:** Srujan Surya  
+- **Email**: suryasrujan700@gmail.com
+- **GitHub**:(https://github.com/srujan096)
 
 ---
 
